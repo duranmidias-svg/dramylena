@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dra. Mylena Simões, ginecologista e obstetra em Paracatu-MG. Pré-natal de alto risco, doenças do colo do útero (PTGI) e cuidado ginecológico com escuta e precisão.">
+  <title>Dra. Mylena Simões | Ginecologista & Obstetra em Paracatu-MG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+:root {
+  --bg: #fffaf7;
+  --bg-soft: #f6ede9;
+  --paper: #ffffff;
+  --ink: #261820;
+  --muted: #715f66;
+  --line: rgba(86, 48, 61, 0.16);
+  --plum: #5a2638;
+  --plum-dark: #321823;
+  --rose: #c88a99;
+  --mauve: #a96f82;
+  --sage: #697f68;
+  --champagne: #c9a46d;
+  --shadow: 0 22px 60px rgba(60, 29, 42, 0.16);
+  --radius: 8px;
+  --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+body::selection {
+  background: rgba(200, 138, 153, 0.32);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: fixed;
+  inset: 18px 20px auto;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 12px;
+  background: rgba(255, 250, 247, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 40px rgba(54, 26, 38, 0.12);
+  backdrop-filter: blur(18px);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.site-header.is-scrolled {
+  background: rgba(255, 250, 247, 0.94);
+  box-shadow: 0 14px 34px rgba(54, 26, 38, 0.18);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  min-width: 220px;
+  gap: 10px;
+}
+
+.brand-mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  flex: 0 0 42px;
+  border: 1px solid rgba(90, 38, 56, 0.24);
+  border-radius: 50%;
+  color: var(--plum);
+  font-family: var(--font-display);
+  font-weight: 700;
+  background: linear-gradient(145deg, #fff, #f1dfe4);
+}
+
+.brand strong {
+  display: block;
+  font-size: 0.94rem;
+  line-height: 1.1;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: rgba(38, 24, 32, 0.74);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.nav-links a {
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--plum);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  gap: 9px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-size: 0.94rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+  cursor: pointer;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.2;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--plum);
+  color: #fff;
+  box-shadow: 0 16px 36px rgba(90, 38, 56, 0.26);
+}
+
+.btn-primary:hover {
+  background: #6a2f45;
+}
+
+.btn-outline {
+  color: var(--plum);
+  background: rgba(255, 255, 255, 0.66);
+  border-color: rgba(90, 38, 56, 0.2);
+}
+
+.btn-outline:hover {
+  background: #fff;
+  border-color: rgba(90, 38, 56, 0.36);
+}
+
+.btn-ghost {
+  color: var(--plum-dark);
+  background: rgba(255, 255, 255, 0.48);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-small {
+  min-height: 42px;
+  padding: 0 15px;
+  font-size: 0.86rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  min-height: 90svh;
+  overflow: hidden;
+  padding: 104px 0 38px;
+  background-image: url("assets/hero-clinica-mylena.png");
+  background-position: center;
+  background-size: cover;
+  isolation: isolate;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(255, 250, 247, 0.98) 0%, rgba(255, 250, 247, 0.84) 42%, rgba(255, 250, 247, 0.18) 76%),
+    linear-gradient(180deg, rgba(42, 20, 29, 0.06), rgba(42, 20, 29, 0.22));
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 650px) minmax(270px, 360px);
+  align-items: end;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-copy {
+  align-self: center;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--plum);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--font-display);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+h1 {
+  max-width: 820px;
+  margin-bottom: 22px;
+  font-size: clamp(2.8rem, 4.35vw, 4.35rem);
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-size: clamp(2.25rem, 4.8vw, 4.7rem);
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.hero-subtitle {
+  max-width: 640px;
+  margin-bottom: 26px;
+  color: rgba(38, 24, 32, 0.78);
+  font-size: clamp(1.02rem, 2vw, 1.22rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  max-width: 670px;
+}
+
+.hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(90, 38, 56, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.54);
+  color: rgba(38, 24, 32, 0.78);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.doctor-panel {
+  align-self: end;
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.54);
+  border-radius: var(--radius);
+  background: rgba(255, 250, 247, 0.78);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(20px);
+}
+
+.doctor-panel img,
+.portrait-frame img {
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 14px 30px rgba(64, 28, 41, 0.22);
+}
+
+.doctor-panel img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+}
+
+.panel-kicker {
+  margin-bottom: 4px;
+  color: var(--sage);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.doctor-panel h2 {
+  margin-bottom: 6px;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.doctor-panel p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.proof-strip {
+  position: relative;
+  z-index: 2;
+  padding: 22px 0 18px;
+  background: var(--paper);
+  border-block: 1px solid var(--line);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.proof-item {
+  min-height: 96px;
+  padding: 18px 18px 16px;
+  border-left: 1px solid var(--line);
+}
+
+.proof-item:first-child {
+  border-left: 0;
+}
+
+.proof-item span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--plum);
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.proof-item p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.section {
+  padding: 98px 0;
+}
+
+.split-grid,
+.included-grid,
+.authority-grid,
+.conversion-grid,
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  align-items: center;
+  gap: 60px;
+}
+
+.section-copy p:not(.eyebrow),
+.section-heading p:not(.eyebrow),
+.conversion-copy p {
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--plum);
+  font-weight: 800;
+}
+
+.text-link svg {
+  width: 17px;
+  height: 17px;
+}
+
+.concern-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.concern-card,
+.step-card,
+.specialty-card,
+.included-card,
+.conversion-box {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.concern-card {
+  min-height: 222px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 14px 38px rgba(54, 26, 38, 0.08);
+}
+
+.concern-card svg,
+.included-list svg,
+.conversion-box li svg {
+  width: 23px;
+  height: 23px;
+  color: var(--mauve);
+  stroke-width: 1.9;
+}
+
+.concern-card h3 {
+  margin-top: 18px;
+}
+
+.concern-card p,
+.specialty-card p,
+.step-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.specialty-band {
+  background: var(--plum-dark);
+  color: #fff;
+}
+
+.specialty-band .eyebrow {
+  color: #e7bdc7;
+}
+
+.specialty-band .section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.55fr);
+  align-items: end;
+  gap: 40px;
+  margin-bottom: 38px;
+}
+
+.specialty-band h2 {
+  margin-bottom: 0;
+}
+
+.specialty-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.specialty-card {
+  min-height: 310px;
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.specialty-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 50%;
+  color: #f3d2da;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.specialty-card p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.method-section {
+  background:
+    linear-gradient(180deg, rgba(255, 250, 247, 0.92), rgba(246, 237, 233, 0.92));
+}
+
+.section-heading {
+  max-width: 830px;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.step-card {
+  position: relative;
+  min-height: 250px;
+  padding: 26px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(54, 26, 38, 0.08);
+}
+
+.step-card span {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  margin-bottom: 46px;
+  border-radius: 50%;
+  background: #f1dfe4;
+  color: var(--plum);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.included-section {
+  background: #fff;
+}
+
+.included-grid {
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 0.98fr);
+}
+
+.included-card {
+  padding: 42px;
+  background:
+    linear-gradient(145deg, #fff, #fff7f8 62%, #f5ebe4);
+  box-shadow: var(--shadow);
+}
+
+.included-card p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.included-list {
+  display: grid;
+  gap: 12px;
+}
+
+.included-list div {
+  display: flex;
+  align-items: center;
+  min-height: 72px;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--plum-dark);
+  font-weight: 800;
+}
+
+.authority-section {
+  background:
+    linear-gradient(90deg, rgba(105, 127, 104, 0.13), rgba(200, 138, 153, 0.15)),
+    var(--bg-soft);
+}
+
+.authority-grid {
+  grid-template-columns: minmax(260px, 330px) 1fr;
+  align-items: center;
+  gap: 54px;
+}
+
+.authority-photo {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  width: 100%;
+  padding: 28px 24px 24px;
+  border: 1px solid rgba(90, 38, 56, 0.16);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(255, 247, 249, 0.68)),
+    radial-gradient(circle at 50% 28%, rgba(200, 138, 153, 0.22), transparent 46%);
+  box-shadow: var(--shadow);
+}
+
+.authority-photo::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(201, 164, 109, 0.32);
+  border-radius: calc(var(--radius) - 2px);
+  pointer-events: none;
+}
+
+.portrait-frame {
+  position: relative;
+  display: grid;
+  width: 178px;
+  height: 178px;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    linear-gradient(145deg, #fff, #f1dfe4);
+  box-shadow: 0 18px 42px rgba(64, 28, 41, 0.2);
+}
+
+.portrait-frame::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border: 1px solid rgba(90, 38, 56, 0.18);
+  border-radius: 50%;
+}
+
+.portrait-frame img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.portrait-caption {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.portrait-caption strong {
+  display: block;
+  color: var(--plum-dark);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  line-height: 1.1;
+}
+
+.portrait-caption span {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.authority-copy p:not(.eyebrow) {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.credential-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.credential-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(90, 38, 56, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--plum);
+  font-weight: 800;
+  font-size: 0.86rem;
+}
+
+.conversion-section {
+  background: var(--plum-dark);
+  color: #fff;
+}
+
+.conversion-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+}
+
+.conversion-section .eyebrow {
+  color: #e7bdc7;
+}
+
+.conversion-copy p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.conversion-box {
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.22);
+}
+
+.mini-calendar {
+  display: grid;
+  gap: 4px;
+  min-height: 118px;
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: rgba(255, 250, 247, 0.96);
+  color: var(--plum-dark);
+}
+
+.mini-calendar span {
+  display: block;
+  width: 42px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--champagne);
+}
+
+.mini-calendar strong {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.mini-calendar small {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.conversion-box ul {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 0 0 22px;
+  list-style: none;
+}
+
+.conversion-box li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 700;
+}
+
+.conversion-box li svg {
+  color: #f3d2da;
+}
+
+.faq-section {
+  background: var(--bg);
+}
+
+.faq-grid {
+  align-items: start;
+}
+
+.faq-list {
+  border-top: 1px solid var(--line);
+}
+
+.faq-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 70px;
+  gap: 18px;
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-item svg {
+  width: 20px;
+  height: 20px;
+  color: var(--plum);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  transition: grid-template-rows 0.24s ease;
+}
+
+.faq-answer.is-open {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer p {
+  min-height: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.faq-answer.is-open p {
+  padding: 0 0 18px;
+}
+
+.site-footer {
+  padding: 34px 0 104px;
+  background: #fff;
+  border-top: 1px solid var(--line);
+}
+
+.footer-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-grid strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--plum-dark);
+}
+
+.footer-grid p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.floating-cta {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 21;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  gap: 8px;
+  padding: 0 18px;
+  border-radius: var(--radius);
+  background: #1f7a4f;
+  color: #fff;
+  box-shadow: 0 18px 42px rgba(31, 122, 79, 0.28);
+  font-weight: 900;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.floating-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 50px rgba(31, 122, 79, 0.32);
+}
+
+.floating-cta svg {
+  width: 19px;
+  height: 19px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 980px) {
+  .site-header {
+    inset: 14px 14px auto;
+    left: 14px;
+    right: 14px;
+    width: auto;
+    margin: 0;
+    transform: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    min-height: 86svh;
+    padding-top: 108px;
+    background-position: 58% center;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(255, 250, 247, 0.98) 0%, rgba(255, 250, 247, 0.82) 55%, rgba(255, 250, 247, 0.36) 100%),
+      linear-gradient(180deg, rgba(42, 20, 29, 0.04), rgba(42, 20, 29, 0.12));
+  }
+
+  .hero-grid,
+  .split-grid,
+  .included-grid,
+  .conversion-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .doctor-panel {
+    max-width: 420px;
+  }
+
+  .proof-grid,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-item {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .proof-item:first-child {
+    border-top: 0;
+  }
+
+  .specialty-band .section-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .specialty-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .authority-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .authority-photo {
+    max-width: 360px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .site-header {
+    top: 10px;
+    padding: 9px;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand small {
+    display: none;
+  }
+
+  .site-header .btn {
+    min-height: 40px;
+    padding-inline: 12px;
+  }
+
+  .hero {
+    min-height: 82svh;
+    padding: 88px 0 32px;
+    background-position: 64% center;
+  }
+
+  h1 {
+    font-size: clamp(2.45rem, 11vw, 3.35rem);
+  }
+
+  h2 {
+    font-size: clamp(2.1rem, 11vw, 3rem);
+  }
+
+  .hero-subtitle,
+  .section-copy p:not(.eyebrow),
+  .section-heading p:not(.eyebrow),
+  .conversion-copy p {
+    font-size: 0.98rem;
+  }
+
+  .hero-actions,
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-trust {
+    gap: 7px;
+  }
+
+  .hero-trust span {
+    min-height: 32px;
+    font-size: 0.76rem;
+  }
+
+  .doctor-panel {
+    display: none;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .concern-grid,
+  .specialty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .specialty-card,
+  .step-card,
+  .concern-card {
+    min-height: auto;
+  }
+
+  .specialty-card span,
+  .step-card span {
+    margin-bottom: 28px;
+  }
+
+  .included-card {
+    padding: 28px;
+  }
+
+  .footer-grid {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-grid .btn {
+    width: 100%;
+  }
+
+  .floating-cta {
+    right: 14px;
+    left: 14px;
+    bottom: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="Voltar ao início">
+      <span class="brand-mark">MS</span>
+      <span>
+        <strong>Dra. Mylena Simões</strong>
+        <small>Ginecologista & Obstetra</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#cuidado">Cuidado</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#metodo">Consulta</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+
+    <a class="btn btn-outline btn-small js-whatsapp" href="https://wa.me/5538984215599?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio" target="_blank" rel="noopener">
+      <i data-lucide="message-circle" aria-hidden="true"></i>
+      WhatsApp
+    </a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Paracatu-MG | CRM-MG 81207 | RQE 67095</p>
+          <h1>Ginecologia e obstetrícia com escuta, clareza e segurança em cada fase da vida.</h1>
+          <p class="hero-subtitle">Consultas com a Dra. Mylena Simões para mulheres que querem entender o próprio corpo, acompanhar a gestação com atenção e tratar alterações sem constrangimento.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary js-whatsapp" href="https://wa.me/5538984215599?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio" target="_blank" rel="noopener">
+              <i data-lucide="calendar-check" aria-hidden="true"></i>
+              Agendar consulta
+            </a>
+            <a class="btn btn-ghost" href="#especialidades">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              Ver áreas de cuidado
+            </a>
+          </div>
+
+          <div class="hero-trust" aria-label="Destaques profissionais">
+            <span>Pré-natal de alto risco</span>
+            <span>Doenças do colo do útero</span>
+            <span>Preceptora UniAtenas</span>
+          </div>
+        </div>
+
+        <aside class="doctor-panel reveal" aria-label="Informações da médica">
+          <img src="assets/mylena-profile.jpg" alt="Foto de perfil da Dra. Mylena Simões" width="100" height="100">
+          <div>
+            <p class="panel-kicker">Atendimento com especialista</p>
+            <h2>Dra. Mylena Simões</h2>
+            <p>Ginecologista & Obstetra com atuação em pré-natal de alto risco e doenças do colo do útero (PTGI).</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Prova e autoridade">
+      <div class="container proof-grid">
+        <article class="proof-item reveal">
+          <span>3,6 mil+</span>
+          <p>pessoas acompanham seus conteúdos no Instagram</p>
+        </article>
+        <article class="proof-item reveal">
+          <span>RQE 67095</span>
+          <p>registro de qualificação de especialista</p>
+        </article>
+        <article class="proof-item reveal">
+          <span>UniAtenas</span>
+          <p>preceptoria e formação de novos médicos</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="cuidado">
+      <div class="container split-grid">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Quando procurar</p>
+          <h2>Você não precisa esperar o desconforto virar rotina.</h2>
+          <p>Alterações no ciclo, dor, sangramentos, corrimentos, preventivo alterado, dúvidas sobre contracepção ou uma gestação que exige atenção especial merecem avaliação cuidadosa.</p>
+          <a class="text-link js-whatsapp" href="https://wa.me/5538984215599?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio" target="_blank" rel="noopener">
+            Falar com a equipe pelo WhatsApp
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="concern-grid">
+          <article class="concern-card reveal">
+            <i data-lucide="activity" aria-hidden="true"></i>
+            <h3>Ciclo e sintomas</h3>
+            <p>Investigue irregularidades, cólicas intensas, escapes e sinais que o corpo vem repetindo.</p>
+          </article>
+          <article class="concern-card reveal">
+            <i data-lucide="microscope" aria-hidden="true"></i>
+            <h3>Preventivo alterado</h3>
+            <p>Entenda próximos passos para alterações no colo do útero, HPV e acompanhamento PTGI.</p>
+          </article>
+          <article class="concern-card reveal">
+            <i data-lucide="baby" aria-hidden="true"></i>
+            <h3>Gestação de risco</h3>
+            <p>Acompanhamento obstétrico para gestações que precisam de vigilância mais próxima.</p>
+          </article>
+          <article class="concern-card reveal">
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+            <h3>Prevenção</h3>
+            <p>Rotina ginecológica, exames, contracepção e decisões com orientação individualizada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section specialty-band" id="especialidades">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Áreas de cuidado</p>
+          <h2>Uma consulta para sair com respostas, plano e próximos passos.</h2>
+        </div>
+
+        <div class="specialty-grid">
+          <article class="specialty-card reveal">
+            <span>01</span>
+            <h3>Pré-natal de alto risco</h3>
+            <p>Acompanhamento para gestantes com fatores que exigem atenção ampliada, exames bem direcionados e orientação clara.</p>
+          </article>
+          <article class="specialty-card reveal">
+            <span>02</span>
+            <h3>Doenças do colo do útero</h3>
+            <p>Investigação e seguimento de alterações no preventivo, HPV e condições relacionadas à PTGI.</p>
+          </article>
+          <article class="specialty-card reveal">
+            <span>03</span>
+            <h3>Consulta ginecológica completa</h3>
+            <p>Escuta, exame quando indicado, revisão de exames anteriores e prevenção de acordo com sua fase de vida.</p>
+          </article>
+          <article class="specialty-card reveal">
+            <span>04</span>
+            <h3>Planejamento e contracepção</h3>
+            <p>Escolhas contraceptivas e planejamento reprodutivo com explicações simples, seguras e personalizadas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method-section" id="metodo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Uma experiência de consulta pensada para acolher e resolver.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step-card reveal">
+            <span>1</span>
+            <h3>Escuta sem constrangimento</h3>
+            <p>Você conta sua história, sintomas, medos e objetivos em um ambiente reservado.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>2</span>
+            <h3>Avaliação direcionada</h3>
+            <p>A médica revisa histórico, exames e define o que precisa ser investigado com prioridade.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>3</span>
+            <h3>Plano de cuidado</h3>
+            <p>Você sai com orientação objetiva, próximos passos e acompanhamento adequado ao seu caso.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>4</span>
+            <h3>Decisão compartilhada</h3>
+            <p>Condutas, exames e tratamentos são explicados para que você participe das escolhas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section included-section">
+      <div class="container included-grid">
+        <div class="included-card reveal">
+          <p class="eyebrow">O que está incluso</p>
+          <h2>Mais do que uma consulta rápida.</h2>
+          <p>O objetivo é transformar dúvida em direção. A consulta organiza sintomas, exames, riscos e prioridades para construir um caminho de cuidado mais seguro.</p>
+          <a class="btn btn-primary js-whatsapp" href="https://wa.me/5538984215599?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio" target="_blank" rel="noopener">
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            Quero agendar
+          </a>
+        </div>
+
+        <div class="included-list reveal" aria-label="Itens da consulta">
+          <div>
+            <i data-lucide="clipboard-list" aria-hidden="true"></i>
+            <span>Revisão do histórico e queixa principal</span>
+          </div>
+          <div>
+            <i data-lucide="scan-heart" aria-hidden="true"></i>
+            <span>Exame físico quando indicado</span>
+          </div>
+          <div>
+            <i data-lucide="file-search" aria-hidden="true"></i>
+            <span>Análise ou solicitação de exames</span>
+          </div>
+          <div>
+            <i data-lucide="route" aria-hidden="true"></i>
+            <span>Plano de acompanhamento e próximos passos</span>
+          </div>
+          <div>
+            <i data-lucide="messages-square" aria-hidden="true"></i>
+            <span>Orientações em linguagem simples</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section authority-section" id="sobre">
+      <div class="container authority-grid">
+        <div class="authority-photo reveal">
+          <div class="portrait-frame">
+            <img src="assets/mylena-profile.jpg" alt="Dra. Mylena Simões" width="100" height="100">
+          </div>
+          <div class="portrait-caption">
+            <strong>Dra. Mylena Simões</strong>
+            <span>CRM-MG 81207 | RQE 67095</span>
+          </div>
+        </div>
+        <div class="authority-copy reveal">
+          <p class="eyebrow">Sobre a médica</p>
+          <h2>Dra. Mylena Simões</h2>
+          <p>Ginecologista & Obstetra em Paracatu-MG, com foco em pré-natal de alto risco e doenças do colo do útero (PTGI). Também atua como preceptora na UniAtenas.</p>
+          <div class="credential-row">
+            <span>CRM-MG 81207</span>
+            <span>RQE 67095</span>
+            <span>@mylenamaissagineco</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section conversion-section" id="agendar">
+      <div class="container conversion-grid">
+        <div class="conversion-copy reveal">
+          <p class="eyebrow">Próximo passo</p>
+          <h2>Agende pelo WhatsApp e veja os horários disponíveis.</h2>
+          <p>Envie uma mensagem para a equipe, informe o motivo da consulta e receba as orientações de agendamento.</p>
+        </div>
+        <div class="conversion-box reveal">
+          <div class="mini-calendar" aria-hidden="true">
+            <span></span>
+            <strong>Consulta</strong>
+            <small>Ginecologia & Obstetrícia</small>
+          </div>
+          <ul>
+            <li><i data-lucide="map-pin" aria-hidden="true"></i> Paracatu-MG</li>
+            <li><i data-lucide="clock-3" aria-hidden="true"></i> Horários mediante agenda</li>
+            <li><i data-lucide="lock-keyhole" aria-hidden="true"></i> Atendimento reservado</li>
+          </ul>
+          <a class="btn btn-primary btn-full js-whatsapp" href="https://wa.me/5538984215599?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio" target="_blank" rel="noopener">
+            <i data-lucide="send" aria-hidden="true"></i>
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2>Antes de chamar no WhatsApp.</h2>
+          <p>Algumas respostas rápidas para chegar à consulta com mais tranquilidade.</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <button class="faq-item" type="button" aria-expanded="false">
+            <span>Posso levar exames antigos?</span>
+            <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. Exames anteriores ajudam a entender sua história e comparar alterações ao longo do tempo.</p>
+          </div>
+
+          <button class="faq-item" type="button" aria-expanded="false">
+            <span>Quando procurar por alterações no preventivo?</span>
+            <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ao receber qualquer resultado alterado, agende uma avaliação para entender o significado e os próximos passos.</p>
+          </div>
+
+          <button class="faq-item" type="button" aria-expanded="false">
+            <span>Acompanha gestação de alto risco?</span>
+            <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. O perfil profissional da Dra. Mylena destaca atuação em pré-natal de alto risco.</p>
+          </div>
+
+          <button class="faq-item" type="button" aria-expanded="false">
+            <span>WhatsApp substitui atendimento de urgência?</span>
+            <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Não. Em dor intensa, sangramento importante, febre, perda de líquido na gestação ou qualquer sinal de urgência, procure pronto atendimento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Dra. Mylena Simões</strong>
+        <p>Ginecologista & Obstetra | CRM-MG 81207 | RQE 67095</p>
+      </div>
+      <a class="btn btn-outline js-whatsapp" href="https://wa.me/5538984215599?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio" target="_blank" rel="noopener">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+        Agendar pelo WhatsApp
+      </a>
+    </div>
+  </footer>
+
+  <a class="floating-cta js-whatsapp" href="https://wa.me/5538984215599?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio" target="_blank" rel="noopener" aria-label="Agendar consulta pelo WhatsApp">
+    <i data-lucide="message-circle" aria-hidden="true"></i>
+    Agendar
+  </a>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>
+const header = document.querySelector("[data-header]");
+const revealItems = document.querySelectorAll(".reveal");
+const faqButtons = document.querySelectorAll(".faq-item");
+
+const setHeaderState = () => {
+  header?.classList.toggle("is-scrolled", window.scrollY > 18);
+};
+
+setHeaderState();
+window.addEventListener("scroll", setHeaderState, { passive: true });
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+}
+
+faqButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    const isOpen = button.getAttribute("aria-expanded") === "true";
+
+    faqButtons.forEach((otherButton) => {
+      otherButton.setAttribute("aria-expanded", "false");
+      otherButton.nextElementSibling?.classList.remove("is-open");
+    });
+
+    if (!isOpen) {
+      button.setAttribute("aria-expanded", "true");
+      answer?.classList.add("is-open");
+    }
+  });
+});
+
+if (window.lucide) {
+  window.lucide.createIcons();
+}
+
+  </script>
+</body>
+</html>
